@@ -87,27 +87,27 @@ const TaskMenu = ({ text, menu, rowsState }: TaskMenuProps) => {
       <div className="flex">
         <ButtonTaskList className="mr-8 ">
           {maximizeIcon}
-          <span className="hidden xl:flex">Open</span>
+          <span className="hidden min-[1200px]:flex">Open</span>
         </ButtonTaskList>
         <ButtonTaskList Ref={todayButtonRef}>
           {calendarIcon}
-          <span className="hidden xl:flex">Today</span>
+          <span className="hidden min-[1200px]:flex">Today</span>
         </ButtonTaskList>
         <ButtonTaskList Ref={publicButtonRef}>
           {unlockIcon}
-          <span className="hidden xl:flex">Public</span>
+          <span className="hidden min-[1200px]:flex">Public</span>
         </ButtonTaskList>
         <ButtonTaskList Ref={normalButtonRef}>
           {discIcon}
-          <span className="hidden xl:flex">Normal</span>
+          <span className="hidden min-[1200px]:flex">Normal</span>
         </ButtonTaskList>
         <ButtonTaskList Ref={estimationButtonRef}>
           {loaderIcon}
-          <span className="hidden xl:flex">Estimation</span>
+          <span className="hidden min-[1200px]:flex">Estimation</span>
         </ButtonTaskList>
       </div>
       <div className="flex">
-        <ButtonTaskList onClick={handleCancel} className="xl:flex hidden">Cancel</ButtonTaskList>
+        <ButtonTaskList onClick={handleCancel} className="min-[1200px]:flex hidden">Cancel</ButtonTaskList>
         <ButtonTaskList
           className="text-white !bg-[#0d54ce] !px-4"
           onClick={handleOK}
